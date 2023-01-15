@@ -10,10 +10,11 @@ def get_cohesion_index(essay, essay_pos, essay_svo, essay_only_noun):
     local_lexical_cohesion, global_lexical_coheison, local_noun_cohesion, global_noun_cohesion = get_lgcohesion(essay, essay_only_noun)
     central_sent_count, central_sent_ratio = get_central_sent_cohesion(essay)
     pron_density, PN_ratio, PPN_ratio, PPP_ratio, PP_TTR, P_TTR, PSent_ratio, PPSent_ratio, conj_density, CN_ratio, CSent_ratio, C_TTR = get_grammatical_cohesion_index(essay, essay_pos)
-    argument_TTR, subject_TTR, subject_p_RATIO, subject_n_RATIO = get_SO_TTR_RATIO_cohesion(essay_svo)
-    local_subject_cohesion, global_subject_cohesion = get_SO_lgcohesion(essay_svo)
-    agregation_count, agregation_density = get_agregation_cohesion(essay_svo)
     subj_density = get_subj_density(essay_svo, essay)
+    subj_TTR, subj_n_TTR, subj_p_RATIO, subj_n_RATIO = get_SO_TTR_RATIO_cohesion(essay_svo)
+    local_subj_cohesion, global_subj_cohesion = get_SO_lgcohesion(essay_svo)
+    subj_sc_num, subj_sc_density = get_agregation_cohesion(essay_svo)
+    
     essay_index = locals()
     essay_index = {k: v for k, v in essay_index.items() if k[:5]!='essay'}
     return essay_index

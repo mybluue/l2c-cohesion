@@ -36,7 +36,7 @@ def get_linguistic_cohesion_indices(input_path,
     # exceed max document limit
     elif max_process_num and len(input_files) > max_process_num:
         input_files = input_files[:max_process_num]
-
+    
     # start processing multiple documents
     for file in tqdm(input_files, desc=f"Processing Texts", total=len(input_files)):
         try:
@@ -59,7 +59,7 @@ def get_linguistic_cohesion_indices(input_path,
 
     df_results = pd.DataFrame.from_dict(index_data, orient='index')
     df_results.index.name = 'text_ID'
-
+    
     # return a csv file
     if output_file and output_file.endswith('.csv'):
         df_results.to_csv(output_file)
@@ -75,7 +75,7 @@ if __name__ == '__main__':
 
     # load model
     ltp_model = LTP(path='models/v4.0_base2_v3')
-    # ltp_model = LTP(path='base2')
+    # ltp_model = LTP(path='base2') 
 
     # sample input
     input_path = 'data/samples'
