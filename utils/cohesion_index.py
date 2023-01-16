@@ -8,8 +8,8 @@ from tqdm import tqdm
 
 def get_cohesion_index(essay, essay_pos, essay_svo, essay_only_noun):
     local_lexical_cohesion, global_lexical_coheison, local_noun_cohesion, global_noun_cohesion = get_lgcohesion(essay, essay_only_noun)
-    central_sent_count, central_sent_ratio = get_central_sent_cohesion(essay)
-    pron_density, PN_ratio, PPN_ratio, PPP_ratio, PP_TTR, P_TTR, PSent_ratio, PPSent_ratio, conj_density, CN_ratio, CSent_ratio, C_TTR = get_grammatical_cohesion_index(essay, essay_pos)
+    central_sent_num, central_sent_ratio = get_central_sent_cohesion(essay)
+    pron_density, PN_ratio, PPN_ratio, PPP_ratio, PP_TTR, P_TTR, P_NPS, PP_NPS, conj_density, CN_ratio, C_NPS, C_TTR = get_grammatical_cohesion_index(essay, essay_pos)
     subj_density = get_subj_density(essay_svo, essay)
     subj_TTR, subj_n_TTR, subj_p_RATIO, subj_n_RATIO = get_SO_TTR_RATIO_cohesion(essay_svo)
     local_subj_cohesion, global_subj_cohesion = get_SO_lgcohesion(essay_svo)

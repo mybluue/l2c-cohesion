@@ -35,7 +35,7 @@ def get_central_sent_cohesion(essay):
 	sent_count = len(essay)     
 	sentco_sum = 0      
 	none_zero_sent_cnt = 0      
-	central_sent_count = 0      
+	central_sent_num = 0      
 	for i in range(sent_count):
 		sentco_sum = 0
 		none_zero_sent_cnt = 0
@@ -44,6 +44,6 @@ def get_central_sent_cohesion(essay):
 				sentco_sum += get_SentCo(essay[i], essay[j])
 				none_zero_sent_cnt += 1
 		if none_zero_sent_cnt and sentco_sum // none_zero_sent_cnt > 80:
-			central_sent_count += 1
-	central_sent_ratio = central_sent_count / (sent_count + 1)
-	return central_sent_count, central_sent_ratio
+			central_sent_num += 1
+	central_sent_ratio = central_sent_num / (sent_count + 1)
+	return central_sent_num, central_sent_ratio

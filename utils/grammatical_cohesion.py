@@ -26,12 +26,12 @@ def get_grammatical_cohesion_index(words,pos):
 
     PP_TTR = len(list(set(prp_word))) / (len(prp_word) + 1)
     P_TTR = len(list(set(pronoun_word))) / (len(pronoun_word) + 1)
-    PSent_ratio = pronouns_count / (len(words)+1)
-    PPSent_ratio = prp_count / (len(words)+1)
+    P_NPS = pronouns_count / (len(words)+1)
+    PP_NPS = prp_count / (len(words)+1)
 
     conj_density = cnj_cnt / (words_cnt + 1)
     CN_ratio = cnj_cnt / (nouns_cnt+1)
-    CSent_ratio = cnj_cnt / (len(words)+1)
+    C_NPS = cnj_cnt / (len(words)+1)
     C_TTR = len(list(set(cnj_word))) / (len(cnj_word) + 1)
 
-    return pron_density, PN_ratio, PPN_ratio, PPP_ratio, PP_TTR, P_TTR, PSent_ratio, PPSent_ratio, conj_density, CN_ratio, CSent_ratio, C_TTR
+    return pron_density, PN_ratio, PPN_ratio, PPP_ratio, PP_TTR, P_TTR, P_NPS, PP_NPS, conj_density, CN_ratio, C_NPS, C_TTR
