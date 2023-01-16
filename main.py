@@ -74,12 +74,11 @@ def get_linguistic_cohesion_indices(input_path,
 if __name__ == '__main__':
 
     # load model
-    # ltp_model = LTP(path='models/v4.0_base2_v3')
-    ltp_model = LTP(path='base2') 
+    ltp_model = LTP(path='models/v4.0_base2_v3')
+    # ltp_model = LTP(path='base2') 
 
     # sample input
     input_path = 'data/samples'
-    input_path = '/home/pengyiping/src/二语初中高'
     output_path = 'data/result.csv'
 
     start_time = time.time()
