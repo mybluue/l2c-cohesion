@@ -11,7 +11,7 @@ def get_cohesion_index(essay, essay_pos, essay_svo, essay_only_noun):
     central_sent_num, central_sent_ratio = get_central_sent_cohesion(essay)
     pron_density, PN_ratio, PPN_ratio, PPP_ratio, PP_TTR, P_TTR, P_NPS, PP_NPS, conj_density, CN_ratio, C_NPS, C_TTR = get_grammatical_cohesion_index(essay, essay_pos)
     subj_density = get_subj_density(essay_svo, essay)
-    subj_TTR, subj_n_TTR, subj_p_RATIO, subj_n_RATIO = get_SO_TTR_RATIO_cohesion(essay_svo)
+    subj_TTR, subj_n_TTR, subj_p_ratio, subj_n_ratio = get_SO_TTR_RATIO_cohesion(essay_svo)
     local_subj_cohesion, global_subj_cohesion = get_SO_lgcohesion(essay_svo)
     subj_sc_num, subj_sc_density = get_agregation_cohesion(essay_svo)
     
