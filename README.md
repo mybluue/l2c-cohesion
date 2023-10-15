@@ -34,7 +34,8 @@ python main.py
 
 l2c-cohesion提供了Windows, MacOS (Intel), MacOS (Apple M1)三种客户端程序，支持现代汉语语篇衔接指标计算。
 
-![1697356845683](image/README/1697356845683.png)
+![f32aaa31a9be2e58a8d798e7b0bbe93](https://github.com/mybluue/l2c-cohesion/assets/73818220/f9b5649c-3d73-473d-ab50-fa73548801b2)
+
 
 ### 2.1 使用说明
 
@@ -69,4 +70,4 @@ l2c-cohesion提供了Windows, MacOS (Intel), MacOS (Apple M1)三种客户端程�
 
 **注1：** 当用户在文本框中输入时，以框中全部内容为指标分析对象；当用户上传文件时，以每个文件中的内容为一篇分析对象，如需分析多篇文本，请将其分别存储在多个txt文件中。
 
-**注2：**考虑到打包后程序的大小及其在本地的运行速度，l2c-cohesion工具使用的ltp模型版本为[v3.4.0](http://ltp.ai/download.html)。
+**注2：** 考虑到打包后程序的大小及其在本地的运行速度，l2c-cohesion工具使用的ltp模型版本为[v3.4.0](http://ltp.ai/download.html)。
