@@ -12,7 +12,7 @@ This project releases the data and codes from the following articles:
 **环境 (Environments)**
 
 * Python 3.8.5
-* ltp 4.1.5
+* ltp 4.1.5.post2
 * numpy 1.21.5
 * pandas 1.4.1
 * tqdm 4.64.0
