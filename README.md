@@ -32,7 +32,7 @@ python main.py
 
 填写[`试用申请`](https://www.wjx.top/vm/OtWw5Vm.aspx# )后可获得l2c-cohesion分析器下载地址。
 
-l2c-cohesion提供了Windows, MacOS (Intel), MacOS (Apple M1)三种客户端程序，支持现代汉语语篇衔接指标计算。
+l2c-cohesion提供了Windows, MacOS (Arm)两种客户端程序，支持现代汉语语篇衔接指标计算。
 
 ![f32aaa31a9be2e58a8d798e7b0bbe93](https://github.com/mybluue/l2c-cohesion/assets/73818220/f9b5649c-3d73-473d-ab50-fa73548801b2)
 
